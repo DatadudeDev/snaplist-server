@@ -1,0 +1,16 @@
+[Unit]
+Description=Snaplist Server
+After=network.target
+
+[Service]
+Type=simple
+User=king
+WorkingDirectory=/home/snaplist
+ExecStart=/home/king/miniconda3/bin/python ./main.py
+Restart=on-failure
+Environment="GOOGLE_APPLICATION_CREDENTIALS=/home/snaplist/data/credentials/firebaseCredentials.json"
+Environment="PYTHONPATH=/home/snaplist"
+TimeoutStopSec=300
+
+[Install]
+WantedBy=multi-user.target

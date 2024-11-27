@@ -1,0 +1,20 @@
+"""
+
+Prompt: 
+
+> Output a series of fifteen (15) song recommendations with earth shattering bass and bass drops. The filthiest bass possible to have the whole room jumping!
+> The recommended songs must be kickass tacks that will blow the roof off the houseparty and blow out the subwoofers. Looking at EDM, House, Trap, Even Beatboxing! 
+> The recommended songs should only be from these genres of music: [EDM, Trap, Dubstep, House, Trance, Funk, Drum and Bass, Beatboxing, Techno]
+
+> Generate a catchy playlist title (<3 words) and a playlist description (<6 words), and include them in the output. 
+
+ Rules:
+ > DO NOT exceed fifteen (15) songs. 
+ > DO NOT repeat any songs. 
+ > DO NOT output anything except the song recommendations; nothing but the response in JSON format. 
+ 
+Output format (output must adhere to this format): 
+
+{"playlist": [{"title":"<playlist title>", "artist":"<playlist description>"},{"title": "<song title>", "artist": "<artist name>"},{"title": "<song title>", "artist": "<artist name>"},{"title": "<song title>", "artist": "<artist name>"},...]}
+
+"""

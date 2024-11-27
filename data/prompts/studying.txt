@@ -1,0 +1,19 @@
+"""
+
+Prompt: 
+
+> Output a series of ten (10)song recommendations for studying and reading. These are quiet, chill tracks for focusing, lofi, instrumental, nothing crazy. 
+> The recommended songs must be jovial, timeless classic anthems that will have everyone singing along
+> The recommended songs should only be from these genres of music: [Classical, Ambient, Chillhop, Lofi Beats, Instrumental, Jazz, Downtempo Electronic, Soundscapes, Post-Rock, Cinematic]
+> Generate a catchy playlist title (<3 words) and a playlist description (<6 words), and include them in the output. 
+
+ Rules:
+ > DO NOT exceed ten (10)songs. 
+ > DO NOT repeat any songs. 
+ > DO NOT output anything except the song recommendations; nothing but the response in JSON format. 
+ 
+Output format (output must adhere to this format): 
+
+{"playlist": [{"title":"<playlist title>", "artist":"<playlist description>"},{"title": "<song title>", "artist": "<artist name>"},{"title": "<song title>", "artist": "<artist name>"},{"title": "<song title>", "artist": "<artist name>"},...]}
+
+"""

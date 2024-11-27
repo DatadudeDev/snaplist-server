@@ -1,0 +1,14 @@
+[Unit]
+Description=Snaplist Server
+After=network.target
+
+[Service]
+Type=simple
+User=king
+WorkingDirectory=/home/snaplist
+ExecStart=./home/stable-diffusion-webui/webui.sh --api --listen --port 9990 --xformers
+Restart=on-failure
+TimeoutStopSec=300
+
+[Install]
+WantedBy=multi-user.target
